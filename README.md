@@ -1,0 +1,4 @@
+- 👋 Hi, I’m Tristan de Blegiers
+- 👀 This GitHub was created to display project I have worked on in recent years
+- 🌱 My principals interest are Data Science and Computer Vision, I am currently looking for an internship
+- 📫 You can reach me on my email - deblegiers.tristan@gmail.com
