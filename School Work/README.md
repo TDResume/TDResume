@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Tristan de Blegiers
-- 👀 This GitHub was created to display project I have worked on in recent years
-- 🌱 My principals interest are Data Science and Computer Vision, I am currently looking for an internship
-- 📫 You can reach me on my email - deblegiers.tristan@gmail.com
+This folder include a few school projects I have recently participated in
+
+Here's the link to an observable (much like a jupyter notebook but using JavaScript), that was done as my final project for my Data Visualization course:
+https://observablehq.com/d/63bf2f006293787c
