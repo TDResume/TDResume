@@ -1,0 +1,110 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Group30.API",
+    "description": "First try on API",
+    "contact": {
+      "name": "Tristan de Blegiers",
+      "email": "tristandeblegiers@knights.ucf.edu"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://cop3441.com"
+    }
+  ],
+  "paths": {
+    "/color": {
+      "description": "Color Resource",
+      "get": {
+        "description": "get color(s)",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "colorname",
+            "required:": true,
+            "schema": {
+              "type": "string",
+              "example": "blue"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/color"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "add a new color",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/color"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Record Successfully added"
+          }
+        }
+      }
+    },
+    "/Color": {
+      "description": "Get Student based on Path Parameter",
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "color",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "success response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/color"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "login": {
+        "type": "object",
+        "properties": {
+          "User": null
+        }
+      },
+      "color": {
+        "type": "string",
+        "properties": {
+          "Color": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
